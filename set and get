@@ -1,0 +1,57 @@
+ // SPDX-License-Identifier: MIT
+
+ pragma solidity ^0.8.26;
+
+contract Egg {
+    // State variables of different types
+    uint256 public uintvalue;
+    int256 public intvalue;
+    bool public boolvalue;
+    address public addressvalue;
+
+    // Function to set and get uintvalue
+    function setUintValue(uint256 _value) public returns (uint256) {
+        uintvalue = _value;
+        return uintvalue;
+    }
+
+    // Function to get uintvalue
+    function getUintValue() public view returns (uint256) {
+        return uintvalue;
+    }
+
+    // Function to set and get intvalue
+    function setIntValue(int256 _value) public returns (int256) {
+        intvalue = _value;
+        return intvalue;
+    }
+
+    // Function to get intvalue
+    function getIntValue() public view returns (int256) {
+        return intvalue;
+    }
+
+    // Function to set and get boolvalue
+    function setBoolValue(bool _value) public returns (bool) {
+        boolvalue = _value;
+        return boolvalue;
+    }
+
+    // Function to get boolvalue
+    function getBoolValue() public view returns (bool) {
+        return boolvalue;
+    }
+
+    // Function to set and get addressvalue
+    function setAddressValue(address _value) public returns (address) {
+        addressvalue = _value;
+        return addressvalue;
+    }
+
+    // Function to get addressvalue
+    function getAddressValue() public view returns (address) {
+        return addressvalue;
+    }
+}
+
+ 
